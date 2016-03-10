@@ -16,7 +16,7 @@ The reports, codes and supporting documents are to be uploaded to Github at:
 To solve the system of linear equations, Ax=b, we need to first determine the property of the square matrix, A.  If  A is a symmetric matrix that is positive definite, then the SOR method will converge to a solution after a certain number of iterations for any initial value of X. In this case, the SOR method is preffered over LU factorization method. On the other hand if the square matrix is not a symmetric positive definite matrix, the SOR method will not converge to a solution. Hence if A is not a symmetric positive definite matrix, we will use the LU factorization technique to solve the equations. Although LU factorization technique can also be used on symmetric positive definite matrices, we prefer the SOR iterative method. LU factorization has a high computational cost  as compared to SOR.
 
 **Explain how you implement your `task1.py` here.**
-Before deciding which method to be used in solving the system of linear equations, we perform a quick check to see whether is A a symmetric positive definite matrix. The ***choice(A)*** function will first check is A a symmetric matrix. If A is not symmetric, then we can immediately conclude that the SOR method will not yield a convergent solution Therefore, the method returns **true** and LU factorisation will be used to solve the system.  If A is symmetric, we continue to check whether is A a positive definite matrix by checking the determinant of each leading principal sub-matrices. If each determinant is greater than 0, then the function returns **false** and the SOR method will be used. Otherwise, the method LU factorization is used.
+Before deciding which method to be used in solving the system of linear equations, we perform a quick check to see whether is A a symmetric positive definite matrix. The ***choice(A)*** function will first check is A a symmetric matrix. If A is not symmetric, then we can immediately conclude that the SOR method will not yield a convergent solution. Therefore, the method returns **true** and LU factorisation will be used to solve the system.  If A is symmetric, we continue to check whether is A a positive definite matrix by checking the determinant of each leading principal sub-matrices. If each determinant is greater than 0, then the function returns **false** and the SOR method will be used. Otherwise, the method LU factorization is used.
 
 If LU factorization is used, the ***lu(A, b)*** function will call the ***LUdecomp(A)*** function to factorise A into lower and upper triangular matrices before proceeding to solve the system of equations.
 
@@ -44,8 +44,8 @@ Put here your picture file (img1.jpg)
 **How many non zero element in $\Sigma$?**
 The number of non zero elements in $\Sigma$ is equivalent to the number of rows in $\Sigma$ which is 800. More generally, the number of non zero elements in $\Sigma$ is equals to the height of our image in pixels.
 
-Put here your lower and better resolution pictures. Explain how you generate
-these pictures from `task2.py`.
+**Put here your lower and better resolution pictures. Explain how you generate
+these pictures from `task2.py`.**
 
 **Lower resolution picture:**
 ![rgb_low.jpg](rgb_low.jpg)
