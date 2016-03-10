@@ -44,8 +44,8 @@ Put here your picture file (img1.jpg)
 **How many non zero element in $\Sigma$?**
 The number of non zero elements in $\Sigma$ is equivalent to the number of rows in $\Sigma$ which is 800. More generally, the number of non zero elements in $\Sigma$ is equals to the height of our image in pixels.
 
-**Put here your lower and better resolution pictures. Explain how you generate
-these pictures from `task2.py`.**
+Put here your lower and better resolution pictures. Explain how you generate
+these pictures from `task2.py`.
 
 **Lower resolution picture:**
 ![rgb_low.jpg](rgb_low.jpg)
