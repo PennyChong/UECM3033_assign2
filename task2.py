@@ -47,7 +47,8 @@ U_red, sigma_red, V_red =decomposition(r) #decomposition for red matix
 U_green, sigma_green, V_green =decomposition(g) #decomposition for green matrix
 U_blue, sigma_blue, V_blue =decomposition(b) # decomposition for blue matrix
 
-
+msg='The number of non zero element in sigma is %d'%(len(sigma_red[:,0]))
+print(msg)
 ### compress - lower resolution picture  n=30
 
 red_low=reso(30,U_red,sigma_red,V_red)  #compress red matrix
