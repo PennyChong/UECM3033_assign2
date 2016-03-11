@@ -69,7 +69,7 @@ plt.show()
 fig.savefig('low_plots.jpg')
 low_im=Image.fromarray(rgb_low,'RGB')
 low_im.save('rgb_low.jpg') #saving the lower resolution image as rgb_low.jpg
-
+plt.imshow(low_im)
 
 ### compress - better resolution picture n=200
 
@@ -91,3 +91,4 @@ plt.show()
 fig.savefig('better_plots.jpg')
 better_im=Image.fromarray(rgb_better,'RGB')
 better_im.save('rgb_better.jpg') #saving the better resolution image as rgb_better.jpg
+plt.imshow(better_im) 
